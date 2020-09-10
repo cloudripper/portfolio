@@ -2,8 +2,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
 }
-
-
 #nav {
     background-color: #f2f3f4;
     border-bottom: #0056b3;
@@ -14,65 +12,60 @@ body {
 .nav-link {
     color: grey
 }
-
 .bgimg {
-    /*padding-top: calc(2 / 3 * 100%); /*aspect ratio 3:2 */
-    height: 1000px;
-    max-width: 100%;
+    height: 100vh;
     position: relative;
 }
-.bgimg::before {
-    content: "";
-    background-image: url("./images/bgimg-sht.jpg");
+.bg_image {
+    position: absolute;
+    max-width: 100%;
+    top: 42px;
+    bottom: 100%;
+    transform: scale(200%);
+    object-fit: cover;
+    opacity: 0.25;
+    z-index: -1;
+}
+.heading {
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-left: 16px;
+    color: #4e4848;
+}
+.project_highlights {
+    padding-top: 50px;
+}
+.proj_img {
+    padding-top: calc(2 / 3 * 100%); /*aspect ratio 3:2 */
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.25;
 }
-.border_color {
-    border-color: #0056b3;
+.proj_format {
+    font-size: 1.3rem;
 }
-
-
-@media (min-width: 768px) {
-    .bgimg::before {
-        content: "";
-        background-image: url("./images/bgimg-sht.jpg");
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+.proj_sum {
+    font-size: 1.1rem;
+}
+.proj_lang {
+    font-size: 1rem;
+    font-weight: 500;
+}
+/* LG Breakpoint */
+@media (min-width: 992px) {
+    .bg_image {
+        position: fixed;
+        max-width: 100%;
+        top: 105px;
+        bottom: 100%;
+        transform: scale(200%);
+        object-fit: cover;
         opacity: 0.25;
+        z-index: -1;
     }
-}
-
-@media (min-width: 1200px) {
-    .bgimg::before {
-        content: "";
-        background-image: url("./images/bgimg.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0.25;
+    .project_highlights {
+        padding-top: 100px;
     }
-}
-
-
-.heading {
-    font-size: 1.5rem;
+    .heading {
+        padding-left: 31px;
+    }
 }
