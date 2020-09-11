@@ -1,9 +1,252 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    background-color:#fefefe;
+}
 #nav {
-    border-color: cadetblue;
+    background-color: #f2f3f4;
+    border-bottom: #0056b3;
 }
 #brand {
-    color: grey
+    color:  #0056b3
 }
 .nav-link {
     color: grey
+}
+/* END NAV */
+
+/* BACKGROUND */
+.border_format {
+    border-color: #0056b3;
+}
+.bgimg {
+    max-width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+.bg-noflow {
+
+}
+#bg_image {
+    position: absolute;
+    width: 100%;
+    top: 42px;
+    transform: scale(200%);
+    object-fit: cover;
+    z-index: -1;  
+}
+
+/* BACKGROUND LG Breakpoint */
+@media (min-width: 992px) {
+    #bg_image {
+        position: fixed !important;
+        max-width: 100%;
+        top: 105px;
+        bottom: 100%;
+        transform: scale(200%);
+        object-fit: cover;
+        z-index: -1;
+    }
+}
+
+
+
+/* PROJECTS */ 
+.heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 16px;
+    color: #4e4848;
+}
+.project_highlights {
+    padding-top: 50px;
+}
+#Proj1 {
+    padding-top: 20 !important;   
+}
+#projectHighlight {
+    padding-top: 100px;
+    padding-left: 16px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #4e4848;
+}
+.sum_container {
+    background-color: rgba(247, 247, 247,0.7);
+}
+.proj_img {
+    padding-top: calc(2 / 3 * 90%); /*aspect ratio 3:2 */
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.proj_detail {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.proj_format {
+    font-size: 1.3rem;
+}
+.proj_sum {
+    font-size: 1.1rem;
+}
+.proj_lang {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+/* Value / ABOUT */
+.valueProp {
+    background-color: #f2f3f4;
+}
+.valueLogo {
+    font-size: 1.8rem;
+    color: #0056b3;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #0056b3;
+    max-width: 100%;
+    
+}
+.aboutInfo {
+ 
+}
+#aboutFormat {
+    color: #0056b3;
+}
+.valueS {
+    font-size: 1.2rem;
+    padding-top: 15px;
+}
+.headshot_img {
+    padding-top: calc(2 / 3 * 75%); /*aspect ratio 3:2 */
+    width: 75%;
+    background-size: cover;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about_detail {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* SM Breakpoint */
+@media (min-width: 576px) and (max-width: 767px) {
+    .proj_img {
+        padding-top: calc(2 / 3 * 66%);
+        width: 66%;        
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .proj_detail {
+        width: 66%;
+    }
+    .valueLogo {
+        max-width: 75%;
+    }
+    .about_detail {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* MD Breakpoint */
+@media (min-width: 768px) {
+    .proj_img {
+        padding-top: calc(2 / 3 * 50%);
+        width: 50%;        
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .proj_detail {
+        width: 50%;
+    }
+    .valueLogo {
+        max-width: 100%;
+    }
+    .about_detail {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 992px) {
+    .proj_img {
+        padding-top: calc(2 / 3 * 95%);
+        width: 95%;        
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .proj_detail {
+        width: 100%;
+    }
+    .headshot_img {
+        padding-top: calc(2 / 3 * 50%);
+        width: 50%;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about_detail {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .project_highlights {
+        margin-bottom: 30px;
+    }
+    .project_highlights {
+        padding-top: 75px;
+    }
+    .heading {
+        padding-top: 10px;
+        padding-left: 31px;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}
+/* FOOT/Contact */
+.footer {
+    background-color: #f2f3f4
+}
+.contactLogo {
+    font-size: 2rem;
+    color: #0056b3;
+    text-align: center;
+    max-width: 100%;
+}
+.dotFormat {
+    text-align: center;
+    color: #808080;
+    font-size: 0.7rem;
+
+}
+.fontMod1 {
+ font-size: 1rem;   
+ font-weight: 500;
+}
+.fontMod2 {
+    font-size: .5rem;   
+    color: #0056b3;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.fontMod3 {
+    font-size: 1rem;   
+    font-style: bold;
+    font-weight: 500;
+}
+/* XL Breakpoint */
+@media (min-width: 1200px) {
+    .contactLogo {
+        font-size: 2.3rem;
+    }
 }
