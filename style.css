@@ -8,7 +8,9 @@ body {
     border-bottom: #0056b3;
 }
 #brand {
-    color:  #0056b3
+    color:  #0056b3;
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 .nav-link {
     color: grey
@@ -50,27 +52,32 @@ body {
 }
 
 
-
-/* PROJECTS */ 
-.heading {
+/* HERO */
+.hero {
     font-size: 1.5rem;
     font-weight: 500;
-    padding-left: 16px;
     color: #4e4848;
 }
+#pm {
+    border-top: 2px solid #0056b3;
+}
+
+
+/* PROJECTS */ 
 .project_highlights {
     padding-top: 50px;
 }
 #Proj1 {
     padding-top: 20 !important;   
 }
-#projectHighlight {
-    padding-top: 100px;
-    padding-left: 16px;
+#portfolio {
+    padding-top: 50px;
     font-size: 1.3rem;
     font-weight: 400;
     color: #4e4848;
-}
+    text-align: center;
+    border-bottom: 2px solid #4e4848;
+  }
 .sum_container {
     background-color: rgba(247, 247, 247,0.7);
 }
@@ -88,7 +95,7 @@ body {
     margin-right: auto;
 }
 .proj_format {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 .proj_sum {
     font-size: 1.1rem;
@@ -97,7 +104,10 @@ body {
     font-size: 1rem;
     font-weight: 500;
 }
-
+#portbr {
+    border: 1.5px solid #4e4848;
+    width: 176px;
+}
 
 
 /* Value / ABOUT */
@@ -160,6 +170,7 @@ body {
 }
 /* MD Breakpoint */
 @media (min-width: 768px) {
+
     .proj_img {
         padding-top: calc(2 / 3 * 50%);
         width: 50%;        
@@ -179,6 +190,7 @@ body {
     }
 }
 @media (min-width: 992px) {
+ 
     .proj_img {
         padding-top: calc(2 / 3 * 95%);
         width: 95%;        
@@ -188,6 +200,7 @@ body {
     .proj_detail {
         width: 100%;
     }
+    
     .headshot_img {
         padding-top: calc(2 / 3 * 50%);
         width: 50%;
@@ -201,10 +214,11 @@ body {
         margin-right: auto;
     }
     .project_highlights {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
+        padding-top: 55px;
     }
-    .project_highlights {
-        padding-top: 75px;
+    #Proj1 {
+        padding-top: 55px;
     }
     .heading {
         padding-top: 10px;
@@ -230,8 +244,8 @@ body {
 
 }
 .fontMod1 {
- font-size: 1rem;   
- font-weight: 500;
+    font-size: 0.8rem;   
+    font-weight: 300;
 }
 .fontMod2 {
     font-size: .5rem;   
@@ -240,10 +254,31 @@ body {
     margin-bottom: auto;
 }
 .fontMod3 {
-    font-size: 1rem;   
-    font-style: bold;
-    font-weight: 500;
+    font-size: 0.8rem;   
+    font-weight: 300;
 }
+
+/* LG Breakpoint */
+@media (min-width: 992px) {
+    .hero {
+        font-size: 1.8rem;
+    }
+    .fontMod1 {
+        font-size: 1rem;   
+        font-weight: 400;
+    }
+    .fontMod2 {
+        font-size: .5rem;   
+        color: #0056b3;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .fontMod3 {
+        font-size: 0.9rem;   
+        font-weight: 400;
+}
+}
+
 /* XL Breakpoint */
 @media (min-width: 1200px) {
     .contactLogo {
