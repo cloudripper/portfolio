@@ -1,7 +1,7 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
-    background-color:#fefefe;
+    background-color: #e8e9eb/*#fefefe*/;
 }
 #nav {
     background-color: #f2f3f4;
@@ -112,8 +112,9 @@ body {
 
 /* Value / ABOUT */
 .valueProp {
-    background-color: #f2f3f4;
+    background-color: #f5f6f8;
 }
+
 .valueLogo {
     font-size: 1.8rem;
     color: #0056b3;
@@ -190,7 +191,9 @@ body {
     }
 }
 @media (min-width: 992px) {
- 
+    .valueProp {
+        background-color: #f2f3f4;
+    }
     .proj_img {
         padding-top: calc(2 / 3 * 95%);
         width: 95%;        
@@ -229,7 +232,7 @@ body {
 }
 /* FOOT/Contact */
 .footer {
-    background-color: #f2f3f4
+    background-color: #f5f6f8;
 }
 .contactLogo {
     font-size: 2rem;
@@ -260,6 +263,9 @@ body {
 
 /* LG Breakpoint */
 @media (min-width: 992px) {
+    .footer {
+        background-color: #f2f3f4;
+    }
     .hero {
         font-size: 1.8rem;
     }
